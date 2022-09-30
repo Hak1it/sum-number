@@ -5,7 +5,7 @@ const server  =  http.createServer(function(req, res)   {
     for(let i=0; i<=100000; i++){
         sum = sum + i;
     }
-    res.write(sum);
+    res.write("num is: " + sum);
     return res.end()
 });
 
